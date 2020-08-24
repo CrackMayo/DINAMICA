@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   *,
@@ -13,19 +13,24 @@ html {
     display: grid;
     /* grid-template-columns: 20% 20% 10% 10% 20% 20% ; */
     grid-template-rows: 100px;
-    grid-auto-rows: 300px 300px 300px 300px 300px 80px;
-    grid-gap: 20px;
+    grid-auto-rows: 500px 500px 500px 400px 60px;
+    grid-gap: 10px;
   }
   
   .item {
    
    
-    color: black;
-    border: 1px solid black;
+    /* color: black;
+    border: 1px solid black; */
     /* gracias a que el texto es un flex-item */
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .itemEspacio1{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2
   }
   
   .item1 {
@@ -35,109 +40,246 @@ html {
     grid-row-end: 4; */
   
     /* Shorthand */
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     /* grid-row: 3 / 4; */
   }
   .item2 {
-    grid-column:  2 / span 1;
+    grid-column:  3 / span 1;
   }
   
   
   .item3 {
    
-    grid-column:  3/ span 1;
+    grid-column:  4 / span 1;
   }
   
 
   .item4 {
-    grid-column: 4 /span 1;
+    grid-column: 5 / span 1;
   }
 
   .item5 {
-    grid-column: 5 /span 1;
+    grid-column: 6 / span 1;
+    text-align: right;
   }
 
   .item6 {
-    grid-column: 6 /span 1;
+    grid-column: 7 /span 1;
   }
 
   .item7 {
-    grid-column: 1 /span 1;
+    grid-column: 2 /span 1;
+    display: inline;
+    text-align: center;
    
   }
   
+  
+
   .item8 {
-    grid-column: 2 /span 5;
+    grid-column: 3 /span 5;
+    background-image: url("Recursos/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash@2x.png");
+    background-size: cover;
     
   }
+  .itemEspacio3{
+    grid-column: 1 /span 1;
+  
 
+  }
   .item9 {
-    grid-column: 1 /span 2;
+    grid-column: 2 /span 1;
+    display: inline;
+    text-align: center;
     
   }
 
   .item10 {
     grid-column: 3 /span 2;
+    display: inline;
+    text-align: center;
+    
     
   }
 
   .item11 {
     grid-column: 5 /span 2;
+    display: inline;
+    text-align: center;
+    
     
   }
 
+  .itemEspacio2{
+    grid-column: 7 /span 1;
+
+  }
+
   .item12 {
-    grid-column: span 1;
-    grid-row: span 2; 
+    grid-column: 1 / span 2;
+    grid-row: span 1; 
+    display: inline;
+    position: relative;
     
   }
 
   .item13 {
-    grid-column: span 5;
+    grid-column: 3 / span 5 ;
+    grid-row: span 1; 
+    display: inline;
+    position: relative;
     
   }
 
-  .item14 {
-    grid-column: span 5;
-    
-  }
+  
   
   .item15 {
-    grid-column: 1 / span 3;
-    
+    grid-column: 2 / span 1;
+    display: inline;
+    position: relative;
   }
 
   .item16 {
-    grid-column: 4 / span 3;
+    grid-column: 3 / span 5;
+    display: inline;
+    position: relative;
     
   }
 
   .item17 {
-    grid-column: 1 / span 6;
+    grid-column: 2 / span 6;
     
   }
 
-  #storeImg{
-      width: 800px;
-      height: 290px;
-
-  }
 
 
 #lIpsumImg1{
-    width: 250px;
-    height: 250px;
-
+    width: 60%;
+    height: 50%;
 }
 
 
 #lIpsumImg2{
-    width: 250px;
-    height: 250px;
-
+  width: 60%;
+  height: 60%;
 }
 #lIpsumImg3{
-    width: 250px;
-    height: 250px;
+  width: 60%;
+  height: 50%;
+}
 
+.arrows{
+  width: 20px;
+  height: 10px;
+}
+
+#logo{
+  width: 35%;
+  height: 70%;
+}
+
+#carrito{
+  width: 35%;
+  height: 35%;
+
+}
+
+#notificaciones{
+  width: 25%;
+  height: 25%;
+}
+
+.parrafoCentrado{
+  text-align: center;
+}
+
+
+
+h5{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+a{
+  text-decoration-line: none;
+  color: #4f4f4f;
+}
+
+
+#imgLoveWill{
+  width: 55%;
+  height: 50%;
+}
+
+#imgdmitriy{
+  position: absolute;
+  width: 45%;
+  height: 75%;
+  top: 25%;
+  right: 30%
+  
+
+}
+
+
+#parrafoLorem{
+  position: absolute;
+  text-align: center;
+  left: 20%;
+
+}
+
+#imgGrupo{
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  right: 0%;
+  bottom: 0;
+}
+
+#loremIpsumTitle{
+  position: absolute;
+  left: 27%;
+  top: 30%;
+  font-size: 2rem;
+
+}
+
+#parrafoLoremIpsum{
+  position: absolute;
+  left: 27%;
+  font-size: 1rem;
+  top: 45%;
+
+}
+
+
+
+#loremIpsum2{
+  position: absolute;
+  left: 18%;
+  top: 5%;
+  font-size: 2rem;
+
+}
+
+#parrafoLoremIpsum2{
+  position: absolute;
+  left: 18%;
+  font-size: 1rem;
+  top: 30%;
+
+}
+
+#imgArturo{
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+}
+
+
+#dinamicom{
+  color: #4f4f4f;
+  font-size: 0.7rem;
 }
