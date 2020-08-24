@@ -14,7 +14,7 @@ html {
     /* grid-template-columns: 20% 20% 10% 10% 20% 20% ; */
     grid-template-rows: 100px;
     grid-auto-rows: 500px 500px 500px 400px 60px;
-    grid-gap: 10px;
+    grid-gap: 15px;
   }
   
   .item {
@@ -24,7 +24,7 @@ html {
     border: 1px solid black; */
     /* gracias a que el texto es un flex-item */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
   }
 
@@ -42,25 +42,30 @@ html {
     /* Shorthand */
     grid-column: 2 / span 1;
     /* grid-row: 3 / 4; */
+    text-align: left;
   }
   .item2 {
     grid-column:  3 / span 1;
+    justify-content: center;
   }
   
   
   .item3 {
    
     grid-column:  4 / span 1;
+    justify-content: center;
   }
   
 
   .item4 {
     grid-column: 5 / span 1;
+    justify-content: center;
   }
 
   .item5 {
+    position: relative;
     grid-column: 6 / span 1;
-    text-align: right;
+   
   }
 
   .item6 {
@@ -70,7 +75,8 @@ html {
   .item7 {
     grid-column: 2 /span 1;
     display: inline;
-    text-align: center;
+    text-align: left;
+    position: relative;
   }
   
   
@@ -79,6 +85,7 @@ html {
     grid-column: 3 /span 5;
     background-image: url("Recursos/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash@2x.png");
     background-size: cover;
+    margin-bottom: 8%;
     
   }
   .itemEspacio3{
@@ -90,6 +97,8 @@ html {
     grid-column: 2 /span 1;
     display: inline;
     text-align: center;
+    position: relative;
+    margin-bottom: 50px;
     
   }
 
@@ -97,6 +106,7 @@ html {
     grid-column: 3 /span 2;
     display: inline;
     text-align: center;
+    margin-bottom: 50px;
     
     
   }
@@ -105,12 +115,16 @@ html {
     grid-column: 5 /span 2;
     display: inline;
     text-align: center;
+    margin-bottom: 50px;
     
     
   }
 
+
   .itemEspacio2{
     grid-column: 7 /span 1;
+    position: relative;
+    
 
   }
 
@@ -147,7 +161,7 @@ html {
 
   .item17 {
     grid-column: 2 / span 6;
-    
+    justify-content: center;
   }
 
 
@@ -155,12 +169,13 @@ html {
 #lIpsumImg1{
     width: 60%;
     height: 50%;
+    position: relative;
 }
 
 
 #lIpsumImg2{
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 56%;
 }
 #lIpsumImg3{
   width: 60%;
@@ -172,18 +187,28 @@ html {
   height: 10px;
 }
 
+.arrows2{
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  right: 0;
+}
+
 #logo{
   width: 35%;
   height: 70%;
+  margin-left: 0;
 }
 
 #carrito{
-  width: 35%;
-  height: 35%;
+  width: 40%;
+  height: 40%;
 
 }
 
 #notificaciones{
+  position: absolute;
+  left: 70%;
   width: 25%;
   height: 25%;
 }
@@ -212,10 +237,10 @@ a{
 
 #imgdmitriy{
   position: absolute;
-  width: 45%;
+  width: 55%;
   height: 75%;
   top: 25%;
-  right: 30%
+  right: 20%
   
 
 }
@@ -272,13 +297,120 @@ a{
 
 #imgArturo{
   width: 60%;
-  height: 100%;
+  height: 75%;
   position: absolute;
-  left: 10%;
+  left: 5%;
+  margin-top: 5%;
 }
 
 
 #dinamicom{
   color: #4f4f4f;
   font-size: 0.7rem;
+}
+
+.btn{
+  border-color: black;
+  background-color: white;
+  width: 200px;
+  height: 30px;
+  color: black;
+  cursor:pointer;
+  outline: none;
+  border-radius: 15px;
+  border-width: thin;
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-left: 40px;
+  margin-top: 4%;
+}
+
+.rightArrow{
+  width: 40%;
+  height: 40%;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+#blackSquare{
+
+  position: absolute;
+  width: 20px;
+  height: 180px;
+  background-color:	#00061e;
+  left: 99%;
+  top: 40%;
+
+}
+
+#mainTitle{
+  
+  font-size:2.6rem;
+  margin-bottom: 5px;
+}
+
+.btn2{
+  border-color: black;
+  background-color: white;
+  width: 150px;
+  height: 30px;
+  color: black;
+  cursor:pointer;
+  outline: none;
+  border-radius: 15px;
+  border-width: thin;
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 25px;
+  margin-top: 4%;
+}
+
+.btn3{
+  position: relative;
+  top: 60%;
+  left: 27%;
+  border-color: black;
+  background-color: white;
+  width: 200px;
+  height: 30px;
+  color: black;
+  cursor:pointer;
+  outline: none;
+  border-radius: 15px;
+  border-width: thin;
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-left: 40px;
+  margin-top: 4%;
+}
+
+
+.yellowRectangle{
+  margin: 0;
+  position: absolute;
+  width: 240px;
+  height: 90px;
+  background:#f3db9b;
+  top: -5%;
+  left: 15%;
+}
+
+#line{
+  position: absolute;
+  height: 0.5px;
+  width: 900px;
+  background-color: #00061e;
+  left: 50%;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  
 }
