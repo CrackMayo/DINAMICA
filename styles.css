@@ -1,262 +1,226 @@
 html {
-    box-sizing: border-box;
-    font-size: 0.9rem;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  .container {
-    display: grid;
-    /* grid-template-columns: 20% 20% 10% 10% 20% 20% ; */
-    grid-template-rows: 100px;
-    grid-auto-rows: 550px 500px 500px 400px 60px;
-    grid-gap: 10px;
-  }
-  
-  .item {
-   
-   
-    /* color: black;
-    border: 1px solid black; */
-    /* gracias a que el texto es un flex-item */
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-  }
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
 
-  .itemEspacio1{
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 2
-  }
-  
-  .item1 {
-    /* grid-column-start: 1;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: 20% 20% 10% 10% 20% 20% ; */
+  grid-template-rows: 100px;
+  grid-auto-rows: 550px 580px 500px 400px 60px;
+  grid-gap: 10px;
+}
+
+.item {
+  /* color: black;
+    border: 1px solid black; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.itemEspacio1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.item1 {
+  /* grid-column-start: 1;
     grid-column-end:  3;
     grid-row-start: 3;
     grid-row-end: 4; */
-  
-    /* Shorthand */
-    grid-column: 2 / span 1;
-    /* grid-row: 3 / 4; */
-    text-align: left;
-  }
-  .item2 {
-    grid-column:  3 / span 1;
-    justify-content: center;
-  }
-  
-  
-  .item3 {
-   
-    grid-column:  4 / span 1;
-    justify-content: center;
-  }
-  
-
-  .item4 {
-    grid-column: 5 / span 1;
-    justify-content: center;
-  }
-
-  .item5 {
-    position: relative;
-    grid-column: 6 / span 1;
-   
-  }
-
-  .item6 {
-    grid-column: 7 /span 1;
-  }
-
-  .item7 {
-    grid-column: 2 /span 1;
-    display: inline;
-    text-align: left;
-    position: relative;
-  }
-  
-  
-
-  .item8 {
-    grid-column: 3 /span 5;
-    background-image: url("Recursos/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash@2x.png");
-    background-size: cover;
-    margin-bottom: 8%;
-    
-  }
-  .itemEspacio3{
-    grid-column: 1 /span 1;
-    margin-bottom: 250px;
-  }
-  .item9 {
-    grid-column: 2 /span 1;
-    display: inline;
-    text-align: center;
-    position: relative;
-    margin-bottom: 50px;
-    
-    
-  }
-
-  .item10 {
-    grid-column: 3 /span 2;
-    display: inline;
-    text-align: center;
-    margin-bottom: 50px;
-    
-    
-    
-  }
-
-  .item11 {
-    grid-column: 5 /span 2;
-    display: inline;
-    text-align: center;
-    margin-bottom: 50px;
-    position: relative;
-  }
-
-
-  .itemEspacio2{
-    grid-column: 7 /span 1;
-    position: relative; 
-    margin-bottom: 250px;
-
-  }
-
-  .item12 {
-    grid-column: 1 / span 2;
-    grid-row: span 1; 
-    display: inline;
-    position: relative;
-    
-    
-    
-  }
-
-  .item13 {
-    grid-column: 3 / span 5 ;
-    grid-row: span 1; 
-    display: inline;
-    position: relative;
-    
-  }
-
-  
-  
-  .item15 {
-    grid-column: 2 / span 1;
-    display: inline;
-    position: relative;
-  }
-
-  .item16 {
-    grid-column: 3 / span 5;
-    display: inline;
-    position: relative;
-    
-  }
-
-  .item17 {
-    grid-column: 2 / span 6;
-    justify-content: center;
-  }
-
-
-
-#lIpsumImg1{
-    width: 60%;
-    height: 50%;
-    position: relative;
+  /* Shorthand */
+  grid-column: 2 / span 1;
+  /* grid-row: 3 / 4; */
+  text-align: left;
+}
+.item2 {
+  grid-column: 3 / span 1;
+  justify-content: center;
 }
 
+.item3 {
+  grid-column: 4 / span 1;
+  justify-content: center;
+}
 
-#lIpsumImg2{
+.item4 {
+  grid-column: 5 / span 1;
+  justify-content: center;
+}
+
+.item5 {
+  position: relative;
+  grid-column: 6 / span 1;
+}
+
+.item6 {
+  grid-column: 7 / span 1;
+}
+
+.item7 {
+  grid-column: 2 / span 1;
+  display: inline;
+  text-align: left;
+  position: relative;
+}
+
+.item8 {
+  grid-column: 3 / span 5;
+  background-image: url("Recursos/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash@2x.png");
+  background-size: cover;
+  margin-bottom: 8%;
+}
+.itemEspacio3 {
+  grid-column: 1 / span 1;
+  margin-bottom: 250px;
+}
+.item9 {
+  grid-column: 2 / span 1;
+  display: inline;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.item10 {
+  grid-column: 3 / span 2;
+  display: inline;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.item11 {
+  grid-column: 5 / span 2;
+  display: inline;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.itemEspacio2 {
+  grid-column: 7 / span 1;
+  position: relative;
+  margin-bottom: 250px;
+}
+
+.item12 {
+  grid-column: 1 / span 2;
+  grid-row: span 1;
+  display: inline;
+  position: relative;
+}
+
+.item13 {
+  grid-column: 3 / span 5;
+  grid-row: span 1;
+  display: inline;
+  position: relative;
+}
+
+.item15 {
+  grid-column: 2 / span 1;
+  display: inline;
+  position: relative;
+}
+
+.item16 {
+  grid-column: 3 / span 5;
+  display: inline;
+  position: relative;
+}
+
+.item17 {
+  grid-column: 2 / span 6;
+  justify-content: center;
+}
+
+#lIpsumImg1 {
+  width: 60%;
+  height: 50%;
+  position: relative;
+}
+
+#lIpsumImg2 {
   width: 50%;
   height: 56%;
 }
-#lIpsumImg3{
+#lIpsumImg3 {
   width: 60%;
   height: 50%;
 }
 
-.arrows{
+.arrows {
   width: 20px;
   height: 10px;
 }
 
-.arrows2{
+.arrows2 {
   position: absolute;
   width: 20px;
   height: 10px;
   right: 0;
 }
 
-#logo{
+#logo {
   width: 35%;
   height: 70%;
   margin-left: 0;
 }
 
-#carrito{
+#carrito {
   width: 40%;
   height: 40%;
-
 }
 
-#notificaciones{
+#notificaciones {
   position: absolute;
   left: 70%;
   width: 25%;
   height: 25%;
 }
 
-.parrafoCentrado{
+.parrafoCentrado {
   text-align: center;
 }
 
-
-
-h5{
+h5 {
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
-a{
+a {
   text-decoration-line: none;
   color: #4f4f4f;
 }
 
-
-#imgLoveWill{
+#imgLoveWill {
   width: 55%;
   height: 50%;
 }
 
-#imgdmitriy{
+#imgdmitriy {
   position: absolute;
   width: 55%;
   height: 75%;
   top: 25%;
-  right: 20%
-  
-
+  right: 20%;
 }
 
-
-#parrafoLorem{
+#parrafoLorem {
   position: absolute;
   text-align: center;
   left: 14%;
   font-size: 1.2rem;
-
 }
 
-#imgGrupo{
+#imgGrupo {
   position: absolute;
   width: 60%;
   height: 80%;
@@ -264,41 +228,35 @@ a{
   bottom: 0;
 }
 
-#loremIpsumTitle{
+#loremIpsumTitle {
   position: absolute;
   left: 27%;
   top: 30%;
   font-size: 2rem;
-
 }
 
-#parrafoLoremIpsum{
+#parrafoLoremIpsum {
   position: absolute;
   left: 27%;
   font-size: 1rem;
   top: 45%;
-
 }
 
-
-
-#loremIpsum2{
+#loremIpsum2 {
   position: absolute;
   left: 18%;
   top: 5%;
   font-size: 2rem;
-
 }
 
-#parrafoLoremIpsum2{
+#parrafoLoremIpsum2 {
   position: absolute;
   left: 18%;
   font-size: 1rem;
   top: 30%;
-
 }
 
-#imgArturo{
+#imgArturo {
   width: 60%;
   height: 75%;
   position: absolute;
@@ -306,19 +264,18 @@ a{
   margin-top: 5%;
 }
 
-
-#dinamicom{
+#dinamicom {
   color: #4f4f4f;
   font-size: 0.9rem;
 }
 
-.btn{
+.btn {
   border-color: black;
   background-color: white;
   width: 200px;
   height: 30px;
   color: black;
-  cursor:pointer;
+  cursor: pointer;
   outline: none;
   border-radius: 15px;
   border-width: thin;
@@ -330,62 +287,52 @@ a{
   margin-top: 4%;
 }
 
-.rightArrow{
+.rightArrow {
   width: 40%;
   height: 40%;
   padding: 0;
   margin: 0;
-
 }
 
-
-#blackSquare{
-
+#blackSquare {
   position: absolute;
   width: 20px;
   height: 180px;
-  background-color:	#00061e;
+  background-color: #00061e;
   left: 97.7%;
   top: 40%;
-
 }
 
-#blackSquare2{
-
+#blackSquare2 {
   position: absolute;
   width: 50px;
   height: 80px;
-  background-color:	#00061e;
+  background-color: #00061e;
   top: 17%;
   left: 80%;
- 
 }
 
-#blackSquare3{
+#blackSquare3 {
   position: absolute;
   width: 330px;
   height: 69px;
-  background-color:	#00061e;
+  background-color: #00061e;
   top: 75%;
   left: 33%;
- 
- 
 }
 
-
-#mainTitle{
-  
-  font-size:2.6rem;
+#mainTitle {
+  font-size: 2.6rem;
   margin-bottom: 5px;
 }
 
-.btn2{
+.btn2 {
   border-color: black;
   background-color: white;
   width: 150px;
   height: 30px;
   color: black;
-  cursor:pointer;
+  cursor: pointer;
   outline: none;
   border-radius: 15px;
   border-width: thin;
@@ -397,7 +344,7 @@ a{
   margin-top: 4%;
 }
 
-.btn3{
+.btn3 {
   position: relative;
   top: 60%;
   left: 27%;
@@ -406,7 +353,7 @@ a{
   width: 200px;
   height: 30px;
   color: black;
-  cursor:pointer;
+  cursor: pointer;
   outline: none;
   border-radius: 15px;
   border-width: thin;
@@ -418,18 +365,17 @@ a{
   margin-top: 4%;
 }
 
-
-.yellowRectangle{
+.yellowRectangle {
   margin: 0;
   position: absolute;
   width: 240px;
   height: 90px;
-  background:#f3db9b;
+  background: #f3db9b;
   top: -5%;
   left: 15%;
 }
 
-#line{
+#line {
   position: absolute;
   height: 0.5px;
   width: 64%;
@@ -441,7 +387,7 @@ a{
   left: 17%;
 }
 
-#dinamicom2{
+#dinamicom2 {
   position: absolute;
   top: 90%;
   left: 63.1%;
@@ -449,7 +395,7 @@ a{
   font-size: 0.9rem;
 }
 
-#parrafoGrupo{
+#parrafoGrupo {
   position: absolute;
   top: 83%;
   left: 61.3%;
@@ -462,14 +408,14 @@ a{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.options{
+.options {
   color: #6e6e6e;
 }
-.parrafoGris{
+.parrafoGris {
   color: #a1a1a1;
 }
 
-.btn4{
+.btn4 {
   position: relative;
   top: 60%;
   left: 27%;
@@ -478,7 +424,7 @@ a{
   width: 200px;
   height: 30px;
   color: white;
-  cursor:pointer;
+  cursor: pointer;
   outline: none;
   border-radius: 15px;
   border-width: thin;
@@ -490,7 +436,7 @@ a{
   margin-top: 4%;
 }
 
-.whiteArrow{
+.whiteArrow {
   width: 20%;
   height: 40%;
   margin-left: 8px;
