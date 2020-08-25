@@ -13,8 +13,8 @@ html {
     display: grid;
     /* grid-template-columns: 20% 20% 10% 10% 20% 20% ; */
     grid-template-rows: 100px;
-    grid-auto-rows: 500px 500px 500px 400px 60px;
-    grid-gap: 15px;
+    grid-auto-rows: 550px 500px 500px 400px 60px;
+    grid-gap: 10px;
   }
   
   .item {
@@ -90,8 +90,7 @@ html {
   }
   .itemEspacio3{
     grid-column: 1 /span 1;
-  
-
+    margin-bottom: 250px;
   }
   .item9 {
     grid-column: 2 /span 1;
@@ -99,6 +98,7 @@ html {
     text-align: center;
     position: relative;
     margin-bottom: 50px;
+    
     
   }
 
@@ -109,6 +109,7 @@ html {
     margin-bottom: 50px;
     
     
+    
   }
 
   .item11 {
@@ -116,15 +117,14 @@ html {
     display: inline;
     text-align: center;
     margin-bottom: 50px;
-    
-    
+    position: relative;
   }
 
 
   .itemEspacio2{
     grid-column: 7 /span 1;
-    position: relative;
-    
+    position: relative; 
+    margin-bottom: 250px;
 
   }
 
@@ -133,6 +133,8 @@ html {
     grid-row: span 1; 
     display: inline;
     position: relative;
+    
+    
     
   }
 
@@ -220,7 +222,7 @@ html {
 
 
 h5{
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
@@ -249,7 +251,8 @@ a{
 #parrafoLorem{
   position: absolute;
   text-align: center;
-  left: 20%;
+  left: 14%;
+  font-size: 1.2rem;
 
 }
 
@@ -306,7 +309,7 @@ a{
 
 #dinamicom{
   color: #4f4f4f;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .btn{
@@ -342,10 +345,33 @@ a{
   width: 20px;
   height: 180px;
   background-color:	#00061e;
-  left: 99%;
+  left: 97.7%;
   top: 40%;
 
 }
+
+#blackSquare2{
+
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  background-color:	#00061e;
+  top: 17%;
+  left: 80%;
+ 
+}
+
+#blackSquare3{
+  position: absolute;
+  width: 330px;
+  height: 69px;
+  background-color:	#00061e;
+  top: 75%;
+  left: 33%;
+ 
+ 
+}
+
 
 #mainTitle{
   
@@ -406,11 +432,66 @@ a{
 #line{
   position: absolute;
   height: 0.5px;
-  width: 900px;
+  width: 64%;
   background-color: #00061e;
-  left: 50%;
   margin-top: 20px;
+  margin-bottom: 80px;
   margin-right: auto;
   margin-left: auto;
-  
+  left: 17%;
+}
+
+#dinamicom2{
+  position: absolute;
+  top: 90%;
+  left: 63.1%;
+  color: #4f4f4f;
+  font-size: 0.9rem;
+}
+
+#parrafoGrupo{
+  position: absolute;
+  top: 83%;
+  left: 61.3%;
+  text-align: center;
+  opacity: 40%;
+  font-size: 0.7rem;
+}
+
+.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.options{
+  color: #6e6e6e;
+}
+.parrafoGris{
+  color: #a1a1a1;
+}
+
+.btn4{
+  position: relative;
+  top: 60%;
+  left: 27%;
+  border-color: black;
+  background-color: black;
+  width: 200px;
+  height: 30px;
+  color: white;
+  cursor:pointer;
+  outline: none;
+  border-radius: 15px;
+  border-width: thin;
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-left: 40px;
+  margin-top: 4%;
+}
+
+.whiteArrow{
+  width: 20%;
+  height: 40%;
+  margin-left: 8px;
 }
