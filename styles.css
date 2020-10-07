@@ -141,6 +141,10 @@ html {
   justify-content: center;
 }
 
+.hide{
+  display: none;
+}
+
 #lIpsumImg1 {
   width: 60%;
   height: 50%;
