@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <section id="main">
+    <section id="main" class="">
         <main class="main sansserif">
             <div class="container">
                 <div class="item itemEspacio1"></div>
                 <div class="item item1">
                     <img id="logo" src="Recursos/Logo.svg" alt="">
                 </div>
-                <div class="item item2"><a class="options" href=""><b>Ropa</b></a></div>
+                <div class="item item2"><a class="options" href="" onclick="page('main','ropa');"><b>Ropa</b></a></div>
                 <div class="item item3"><a class="options" href=""><b>Accesorios</b></a></div>
                 <div class="item item4"><a class="options" href=""><b>Zapatos</b></a></div>
                 <div class="item item5">
@@ -106,6 +106,70 @@
             </div>
             </div>
         </main>
+    </section>
+    <section id="ropa" class="hide">
+        <div class="container">
+            <div class="item itemEspacio1"></div>
+            <div class="item item1">
+                <img id="logo" src="Recursos/Logo.svg" alt="">
+            </div>
+            <div class="item item2"><a class="options" href="" onclick="page('ropa','main');"><b>Inicio</b></a></div>
+            <div class="item item3"><a class="options" href=""><b>Accesorios</b></a></div>
+            <div class="item item4"><a class="options" href=""><b>Zapatos</b></a></div>
+            <div class="item item5">
+                <img id="notificaciones" src="Recursos/Icono de notificaciones.svg" alt="">
+            </div>
+            <div class="item item6">
+                <img id="carrito" src="Recursos/Icono carrito de compra.svg" alt="">
+            </div>
+            <div class="item item9">
+                <br>
+                <br>
+                <div class="yellowRectangle"></div>
+                <img id="lIpsumImg1" src="Recursos/andres-jasso-PqbL_mxmaUE-unsplash@2x.png" alt="">
+                <h5>Lorem Ipsum 1</h5>
+                <p class="parrafoCentrado parrafoGris">Es simplemente el texto de <br>relleno de las imprentas y<br>archivos de
+                    texto.</p>
+                <button type="submit" class="btn2">Ver mas<img class="rightArrow" src="Recursos/Flechas (1).svg"
+                        alt=""></button>
+            </div>
+            <div class="item item10">
+                <img id="lIpsumImg2" src="Recursos/omar-lopez-9w20MZ0lsK8-unsplash@2x.png" alt="">
+                <h5>Lorem Ipsum 2</h5>
+                <p class="parrafoCentrado parrafoGris">Es simplemente el texto de <br>relleno de las imprentas y<br>archivos de
+                    texto.</p>
+                <button type="submit" class="btn2">Ver mas<img class="rightArrow" src="Recursos/Flechas (1).svg"
+                        alt=""></button>
+                <div id="line"></div>
+            </div>
+            <div class="item item11">
+                <br>
+                <br>
+                <img id="lIpsumImg3" src="Recursos/freestocks-_3Q3tsJ01nc-unsplash@2x.png" alt="">
+                <h5>Lorem Ipsum 3</h5>
+                <p class="parrafoCentrado parrafoGris">Es simplemente el texto de <br>relleno de las imprentas y<br>archivos de
+                    texto.</p>
+                <button type="submit" class="btn2">Ver mas<img class="rightArrow" src="Recursos/Flechas (1).svg"
+                        alt=""></button>
+                <div id="blackSquare2"></div>
+            </div>
+            <div class="item itemEspacio2">
+                <img class="arrows2" src="Recursos/Flechas (1).svg" alt="">
+            </div>
+            <div class="item item15">
+                <h5 id="loremIpsum2">Lorem Ipsum</h5>
+                <p id="parrafoLoremIpsum2">Es simplemente el texto de<br> relleno de las imprentas y<br> archivos de
+                    texto. Lorem<br> Ipsum ha sido el texto de<br> relleno estándar de las<br> industrias desde el año
+                    1500,<br> cuando un impresor (N. del T.<br>persona que se dedica a la<br> imprenta).</p>
+            </div>
+            <div class="item item16">
+                <div id="blackSquare3"></div>
+                <img id="imgArturo" src="Recursos/arturo-rey-5yP83RhaFGA-unsplash@2x.png" alt="">
+            </div>
+            <div class="item item17">
+                <pre id="dinamicom">D I N A M I C . C O M</pre>
+            </div>
+        </div>
     </section>
     <script src="main.js"></script>
 </body>
